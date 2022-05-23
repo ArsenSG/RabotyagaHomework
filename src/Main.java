@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        OnTaskErrorListener listener = System.out::println;
+//        OnTaskDoneListener listener = System.out::println;
+        OnTaskErrorListener error = System.out::println;
 
-        Worker worker = new Worker(listener);
+        Worker worker = new Worker(error);
         worker.start();
-
     }
 }
